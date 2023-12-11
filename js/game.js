@@ -117,6 +117,7 @@ async function heroic() {
     printText(["\nIt's too painful for him to move. He's in no state to walk.\n",
       "\nYou'll send help back when you get to a phone.\n"])
     await delay(4000);
+    resetInput();
     slow();
   }
 }
