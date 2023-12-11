@@ -13,3 +13,8 @@ div {
   font-family: "Hiragino Maru Gothic ProN", "Serif";
   margin-left: 11px;
 }
+
+#submit {
+    margin: 11px
+    background-color: #C689C6;
+}
