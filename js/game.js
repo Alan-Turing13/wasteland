@@ -160,7 +160,7 @@ async function slow() {
        "saved and he's on the road to recovery.\n",
      "\nWell done. you completed WASTELAND!!\n",
      "\n\t\t(☆▽☆)"]);
-     setTimeout(complete, 8000);
+     setTimeout(complete, 7000);
     }
 }
 
