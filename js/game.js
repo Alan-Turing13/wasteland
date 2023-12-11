@@ -11,7 +11,7 @@ TEXTBOX.addEventListener("keypress", function(event) {
   }
 });
 
-function getInput() {return document.getElementById('userInput').value;}
+function getInput() {return document.getElementById('userInput').value.toLowerCase();}
 function resetInput() {document.getElementById('userInput').value = '';}
 function showInputBox(answers) {TEXTBOX.style.display="grid"; TEXTBOX.placeholder=answers;}
 function hideInputBox() {TEXTBOX.style.display="none"}
