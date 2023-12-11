@@ -136,20 +136,20 @@ async function slow() {
   else if (choice === "keep on") {
     hideInputBox();
     resetInput();
-    printText(["\nyou're walking for another few hundred metres, barely able to stand, " +
-    "until you spot a motorway service station.\n",
-      "\nyou go into McDonald's and pick up someone's Fanta and down all of it in one.\n",
+    printText(["\nYou're walking for another few hundred metres, barely able to stand, " +
+    "until you spot a motorway service station...\n",
+      "\nYou go into McDonald's and pick up someone's fanta and down all of it in one...\n",
       "\nYou notice a sign saying there are job vacancies.\n",
       "\nDo you register your interest, or demand someone give you their phone so you can call an ambulance?\n",
-      "\n1. Seems like a good opportunity\n",
-      "\n2. I will keep my promise.\n"], "job/ambulance")
+      "\n(1. Seems like a good opportunity.",
+      "\n2. I will keep my promise)\n"], "job/ambulance")
   }
 
     var choiceTwo = await waitForInput("slowTwo");
     if (choiceTwo === "job") {
       hideInputBox();
       printText(["\nYou approach the counter dizzy, but collapse due to chronic malnutrition, " +
-      "smashing your head on the well-polished floor.\n"]);
+      "\nsmashing your head on the exceedingly well-polished floor.\n"]);
       setTimeout(death, 2000);
     }
     else if (choiceTwo === "amb") {
