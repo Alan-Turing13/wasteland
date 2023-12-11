@@ -89,7 +89,7 @@ async function fast() {
   else if (choice === "turn") {
     hideInputBox();
     printText(["\nThe bear is charging at you.\n",
-  "\nThe two of you eventually manage to work out an arrangement, but over the months to come,\n" +
+  "\nThe two of you eventually manage to work out an arrangement, but over the months to come," +
   "\nyou find yourself unfulfilled by the bear way of life, always wondering what might have been.\n"]);
     setTimeout(bearLife, 4000);
   }
