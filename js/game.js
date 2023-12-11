@@ -1,7 +1,7 @@
 const TEXTBOX = document.getElementById("userInput");
-const DEATH = new Audio("../wasteland/DEATH.wav");
-const COMPLETE = new Audio("../wasteland/COMPLETE.wav");
-const BEAR = new Audio("../wasteland/BEARLIFE.wav");
+const DEATH = new Audio("../DEATH.wav");
+const COMPLETE = new Audio("../COMPLETE.wav");
+const BEAR = new Audio("../BEARLIFE.wav");
 
 
 TEXTBOX.addEventListener("keypress", function(event) {
