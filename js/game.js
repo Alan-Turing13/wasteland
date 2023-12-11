@@ -96,6 +96,8 @@ async function fast() {
   else invalidAnswer();
 }
 
+function delay(ms) { return new Promise(resolve => setTimeout(resolve, ms)); }
+
 async function heroic() {
   hideInputBox();
 
@@ -114,7 +116,8 @@ async function heroic() {
     hideInputBox();
     printText(["\nIt's too painful for him to move. He's in no state to walk.\n",
       "\nYou'll send help back when you get to a phone.\n"])
-    setTimeout(slow, 4000);
+    await delay(4000);
+    slow();
   }
 }
 
