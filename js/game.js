@@ -157,7 +157,7 @@ async function slow() {
      hideInputBox();
      printText(["\nPeople look at you like you're insane.\n",
      "\nBut after a while, someone hands you a Filet-o-Fish.\n",
-     "\nTwo weeks later, you read in the newspaper that the victim of the bear attack was" +
+     "\nTwo weeks later, you read in the newspaper that the victim of the bear attack was " +
        "saved and he's on the road to recovery.\n",
      "\nWell done. you completed WASTELAND!!\n",
      "\n\t\t(☆▽☆)"]);
