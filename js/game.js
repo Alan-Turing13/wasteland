@@ -115,7 +115,7 @@ async function heroic() {
   else if (choice === "carry") {
     hideInputBox();
     printText(["\nIt's too painful for him to move. He's in no state to walk.\n",
-      "\nYou'll send help back when you get to a phone.\n"])
+      "\nIt's hard to leave him there but you promise to send help when you get to a phone.\n"])
     await delay(4000);
     resetInput();
     slow();
@@ -139,24 +139,23 @@ async function slow() {
     resetInput();
     printText(["\nYou're walking for another few hundred metres, barely able to stand, " +
     "until you spot a motorway service station...\n",
-      "\nYou go into McDonald's and pick up someone's fanta and down all of it in one...\n",
+      "\nYou enter a McDonald's, and down all of someone's fanta in one gulp.\n",
       "\nYou notice a sign saying there are job vacancies.\n",
       "\nDo you register your interest, or demand someone give you their phone so you can call an ambulance?\n",
-      "\n(1. Seems like a good opportunity.",
-      "\n2. I will keep my promise)\n"], "job/ambulance")
+      "\n(1. Seems like a good opportunity.\n2. I will keep my promise)\n"], "job/ambulance")
   }
 
     var choiceTwo = await waitForInput("slowTwo");
     if (choiceTwo === "job") {
       hideInputBox();
-      printText(["\nYou approach the counter dizzy, but collapse due to chronic malnutrition, " +
-      "\nsmashing your head on the exceedingly well-polished floor.\n"]);
+      printText(["\nYou approach the counter but you're so light-headed you collapse," +
+      "\nsmashing your head on the surprisingly well-polished floor.\n"]);
       setTimeout(death, 2000);
     }
     else if (choiceTwo === "amb") {
      hideInputBox();
      printText(["\nPeople look at you like you're insane.\n",
-     "\nBut after a while, someone hands you a Filet-o-Fish.\n",
+     "\nBut after a while, someone hands you a Filet-o-fish.\n",
      "\nTwo weeks later, you read in the newspaper that the victim of the bear attack was " +
        "saved and he's on the road to recovery.\n",
      "\nWell done. you completed WASTELAND!!\n",
