@@ -130,7 +130,8 @@ async function slow() {
   var choice = await waitForInput('slowOne');
   if (choice === "lay down") {
     hideInputBox();
-    printText(["\nYou fall asleep forevermore.\n"]); death();
+    printText(["\nYou fall asleep forevermore.\n"]); 
+    setTimeout(death, 2000);
   }
   else if (choice === "keep on") {
     hideInputBox();
